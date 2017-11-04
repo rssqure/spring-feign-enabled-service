@@ -5,6 +5,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 @FeignClient("spring-eureka-service-provider")
 public interface ServiceClient {
-    @RequestMapping("/service")
+    @RequestMapping("/provider/service")
     String service();
 }
